@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Lenguajes Y Automatas</title>
     <link rel="stylesheet" href="style.css">
     <script src="responsive.js"></script>
@@ -18,14 +18,15 @@
             <div class="col-md-8">
                 <div class="card bg-light">
                     <h2 class="text-center card-title mt-4">Lenguajes y Automatas 2</h2>
+                    <h4 class="text-center mt-1">Diego Adrian Alonso Carlos</h4>
                     <form class="card-body">
                         <div class="mb-3">
                             <label class="form-label">Expresion matematica</label>
                             <input type="text" class="form-control" id="expresion"
-                            placeholder="Introduce una expresion en notacion Infija" autocomplete="off">
+                                placeholder="Introduce una expresion en notacion Infija" required>
                         </div>
                         <div class="mb-3" id="divPrefija">
-                            <label class="form-label">Expresion en notacion Prefija</label>
+                            <label class="form-label">Expresion en notacion Prefija / Polaca</label>
                             <input type="text" class="form-control" id="prefija" readonly disabled>
                         </div>
                         <div class="mb-3" id="divPosfija">
@@ -36,8 +37,13 @@
                             <label class="form-label">Resultado</label>
                             <input type="number" class="form-control" id="resultado" readonly disabled>
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <button type="button" class="btn btn-primary" onclick="mostrarDivs()">Convertir</button>
+                        <div class="botones">
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary" onclick="mostrarDivs()">Convertir</button>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-primary" onclick="limpiar()">Limpiar</button>
+                            </div>
                         </div>
                     </form>
                 </div>

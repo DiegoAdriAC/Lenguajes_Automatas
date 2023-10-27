@@ -1,0 +1,24 @@
+(5+3)*2-7
+4*(6-2)+8/2
+(2+3)*(4-1)
+6+8/2-(9-4)
+5*(3+7)+4-2
+
+3 + 4 * 2
+(5 - 2) / (7 + 1)
+2 * (4 + 3)
+8 / 2 - 1
+(3 + 5) * 2 - (4 / 2)
+
+PREFIJAS
+Para realizar la conversión de infijas a postfijas es necesario utilizar una Pila y seguir las siguientes reglas:
+
+Operador = precedencia > se cambia
+Operador > precedencia > se agrega a la pila
+Operador < precedencia > sacar operador de la pila
+Paréntesis derecho > vaciar pila
+
+POSTFIJAS / POLACA
+En este caso, cada número que encontremos en la expresión, deberá ser introducido en la pila y cuando se encuentre 
+un operador, deberemos sacar los dos últimos valores de la pila y aplicarles el operador. 
+El resultado deberá ser introducido nuevamente en la pila.
